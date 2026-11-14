@@ -1,6 +1,5 @@
 """Shared helpers for part1.py .. part4.py. Importing this module runs nothing."""
 import csv
-import math
 import os
 
 import numpy as np
@@ -164,9 +163,3 @@ def knn_cv(Xtr, ytr, ks=tuple(range(1, 22, 2))):
     cv = [(k, float(np.mean(f1s[k]))) for k in ks]
     best = max(cv, key=lambda t: (t[1], -t[0]))[0]
     return cv, best
-
-
-def knn_predict(Xref, yref, Xq, K):
-    """Positive when at least (K+1)/2 of K neighbours are positive (K odd)."""
-    pos = knn_pos_share(Xref, yref, Xq, K) * K
-    return pos >= (K + 1) / 2 - 1e-9

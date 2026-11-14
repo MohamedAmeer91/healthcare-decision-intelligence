@@ -5,7 +5,7 @@ import numpy as np
 
 from common import load_data, write_results
 
-X, outcome, value = load_data()
+X, _, value = load_data()
 n = len(value)
 x4 = X[:, 3]
 R = []  # ordered (key, value) results
