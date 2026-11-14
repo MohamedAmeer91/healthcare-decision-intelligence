@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Healthcare Decision Intelligence</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Healthcare Decision Intelligence</h1>
+  <p class="sub">Capstone dashboard (IIT Mandi, Minor in AI &amp; Data Science). Care-plan cost, appointment no-shows and patient segments for a PharmEasy-style online pharmacy. All data is synthetic; nothing here is clinical advice.</p>
+  <span class="badge" id="mode">Loading…</span>
+</header>
+<nav><div>
+  <a href="#overview">Overview</a><a href="#part1">1 Cost &amp; regression</a><a href="#part2">2 No-show model</a>
+  <a href="#part3">3 Segments &amp; PCA</a><a href="#part4">4 Model choice</a><a href="#memo">Memo</a>
+</div></nav>
+<main id="app"></main>
+<footer>Numbers come from the committed <code>outputs/</code> files of the capstone repository; money is in Indian Rupees (INR).</footer>
+<div id="tip" role="tooltip"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
